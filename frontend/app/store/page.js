@@ -19,7 +19,7 @@ export default async function page() {
   const products = await getProducts()
    
   return (
-    <Container className="grid grid-cols-5 gap-10 py-5">
+    <Container className="flex gap-10">
 
       <Category categories={categories} />
       <ProductList products={products} />

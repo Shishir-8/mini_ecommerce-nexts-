@@ -1,11 +1,12 @@
 "use client"
 
-import { useDispatch } from "react-redux"
+import { useDispatch} from "react-redux"
 import { Button } from "../ui/button"
 import { addToCart } from "@/redux/slice/cartSlice"
 
 export default function AddToCart({product}) {
     const dispatch = useDispatch()
+
   return (
     <Button
     onClick={()=> dispatch(addToCart(product))}
